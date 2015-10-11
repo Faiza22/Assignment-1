@@ -1,0 +1,557 @@
+﻿<html>
+<head>
+	<title>Fun with Urdu</title>
+
+	<meta http-equiv=content-type content="text/html; charset=UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<style>
+
+		* 
+		{
+   			 box-sizing: border-box;
+		}
+		.row:after 
+		{
+    			content: "";
+   			clear: both;
+    			display: block;
+		}
+
+		[class*="col-"] 
+		{
+    			float: left;
+    			padding: 15px;
+		}
+
+		.col-1 {width: 5.26%;}
+		.col-2 {width: 10.526%;}
+		.col-3 {width: 15.789%;}
+		.col-4 {width: 21.05%;}
+		.col-5 {width: 26.31%;}
+		.col-6 {width: 31.58%;}
+		.col-7 {width: 36.84%;}
+		.col-8 {width: 42.105%;}
+		.col-9 {width: 47.368%;}
+		.col-10 {width: 52.63%;}
+		.col-11 {width: 57.89%;}
+		.col-12 {width: 63.158%;}
+		.col-13 {width: 68.42%;}
+		.col-14 {width: 73.68%;}
+		.col-15 {width: 78.94%;}
+		.col-16 {width: 84.21%;}
+		.col-17 {width: 89.47%;}
+		.col-18 {width: 94.73%;}
+		.col-19 {width: 100%;}
+		
+		body
+		{
+			background-image:url("images/back.jpg");
+			background-size:100% 100%;
+			background-attachment:fixed;
+			background-repeat:no-repeat;
+		}
+
+		#back
+		{
+			background:rgba(255,255,255,0.7);
+			margin:2% 11%;
+			width:77%;
+			height:480px;
+			font-size:200%;	
+			padding:0;	
+		}
+
+		button
+		{
+			font-size:25px;
+			font-family:Comic Sans MS;
+			text-align:center;
+			border:2px solid red;
+			border-radius:10px;
+			padding: 15px;
+			background-color:#eef946;
+			color:red;
+			width:70%;
+		}
+
+		button:hover
+		{
+			color:purple;
+			border:3px solid purple;
+		}
+
+		#yellow_back
+		{
+			background-color:rgb(255,255,102);
+		}
+		
+		.image
+		{
+		background-color:none;
+		}
+
+		.image div
+		{
+			display:none;
+			margin:6% 37% 7%;
+			border:4px solid green;
+			border-radius:25px;
+		}
+
+		.image div:target
+		{
+			display:block;
+		}
+	
+		#left 
+		{
+    			height:60px;
+			width:60px;
+    			background: url("images/left.png") 0px 0;
+			background-repeat:no-repeat;
+			margin:25% -70% 15%;
+		}
+
+
+		#right 
+		{
+    			height:60px;
+			width:60px;
+    			background: url("images/right.png") 0px 0;
+			background-repeat:no-repeat;
+			margin:-37% 150% 15%;
+		}
+
+		#img1 
+		{
+    			height: 210px;
+    			width: 256px;
+    			background: url("images/alphabets.png") -15px -25px;
+		}
+
+		#img2 
+		{
+    			height: 210px;
+    			width: 256px;
+    			background: url("images/alphabets.png") -325px -20px;
+		}
+
+		#img3 
+		{
+    			height: 210px;
+    			width: 256px;
+    			background: url("images/alphabets.png") -660px -10px;
+		}
+
+		#img4 
+		{
+    			height: 210px;
+    			width: 256px;
+    			background: url("images/alphabets.png") -990px -10px;
+		}
+
+		#img5 
+		{
+    			height: 210px;
+    			width: 256px;
+    			background: url("images/alphabets.png") -1315px -10px;
+		}
+
+		#img6 
+		{
+
+    			height: 210px;
+    			width: 256px;
+    			background: url("images/alphabets.png") -1605px -10px;
+		}
+
+		#img7 
+		{
+    			height: 210px;
+    			width: 256px;
+    			background: url("images/alphabets.png") -1910px -10px;
+		}
+
+		#img8 
+		{
+    			height: 210px;
+    			width: 256px;
+    			background: url("images/alphabets.png") -15px -250px;
+		}
+
+		#img9 
+		{
+    			height: 210px;
+    			width: 256px;
+    			background: url("images/alphabets.png") -350px -230px;
+		}
+
+		#img10 
+		{
+    			height: 210px;
+    			width: 256px;
+    			background: url("images/alphabets.png") -670px -230px;
+		}
+
+		#img11 
+		{
+    			height: 210px;
+    			width: 256px;
+    			background: url("images/alphabets.png") -990px -230px;
+		}
+
+		#img12 
+		{
+    			height: 210px;
+    			width: 256px;
+    			background: url("images/alphabets.png") -1290px -220px;
+		}
+
+		#img13 
+		{
+    			height: 210px;
+    			width: 256px;
+    			background: url("images/alphabets.png") -1600px -230px;
+		}
+
+		#img14 
+		{
+    			height: 210px;
+    			width: 256px;
+    			background: url("images/alphabets.png") -1900px -230px;
+		}
+
+		#img15 
+		{
+    			height: 210px;
+    			width: 256px;
+    			background: url("images/alphabets.png") -15px -450px;
+		}
+
+		#img16 
+		{
+    			height: 210px;
+    			width: 256px;
+    			background: url("images/alphabets.png") -320px -460px;
+		}
+
+		#img17 
+		{
+    			height: 210px;
+    			width: 256px;
+    			background: url("images/alphabets.png") -650px -460px;
+		}
+
+		#img18 
+		{
+    			height: 210px;
+    			width: 256px;
+    			background: url("images/alphabets.png") -960px -460px;
+		}
+
+		#img19 
+		{
+    			height: 210px;
+    			width: 256px;
+    			background: url("images/alphabets.png") -1260px -460px;
+		}
+
+		#img20 
+		{
+    			height: 210px;
+    			width: 256px;
+    			background: url("images/alphabets.png") -1570px -460px;
+		}
+
+		#img21 
+		{
+    			height: 210px;
+    			width: 256px;
+    			background: url("images/alphabets.png") -1890px -460px;
+		}
+
+		#img22 
+		{
+    			height: 210px;
+    			width: 256px;
+    			background: url("images/alphabets.png") -15px -680px;
+		}
+
+		#img23 
+		{
+    			height: 210px;
+    			width: 256px;
+    			background: url("images/alphabets.png") -320px -680px;
+		}
+
+		#img24 
+		{
+    			height: 210px;
+    			width: 256px;
+    			background: url("images/alphabets.png") -640px -680px;
+		}
+
+		#img25 
+		{
+    			height: 210px;
+    			width: 256px;
+    			background: url("images/alphabets.png") -955px -680px;
+		}
+
+		#img26 
+		{
+    			height: 210px;
+    			width: 256px;
+    			background: url("images/alphabets.png") -1260px -680px;
+		}
+
+		#img27 
+		{
+    			height: 210px;
+    			width: 256px;
+    			background: url("images/alphabets.png") -1570px -680px;
+		}
+
+		#img28 
+		{
+    			height: 210px;
+    			width: 256px;
+    			background: url("images/alphabets.png") -1900px -680px;
+		}
+
+		#img29 
+		{
+    			height: 210px;
+    			width: 256px;
+    			background: url("images/alphabets.png") -25px -930px;
+		}
+
+		#img30 
+		{
+    			height: 210px;
+    			width: 256px;
+    			background: url("images/alphabets.png") -320px -930px;
+		}
+
+		#img31 
+		{
+    			height: 210px;
+    			width: 256px;
+    			background: url("images/alphabets.png") -650px -910px;
+		}
+
+		#img32 
+		{
+    			height: 210px;
+    			width: 256px;
+    			background: url("images/alphabets.png") -950px -910px;
+		}
+
+		#img33 
+		{
+    			height: 210px;
+    			width: 256px;
+    			background: url("images/alphabets.png") -1260px -910px;
+		}
+
+		#img34 
+		{
+    			height: 210px;
+    			width: 256px;
+    			background: url("images/alphabets.png") -1570px -910px;
+		}
+
+		#img35 
+		{
+    			height: 210px;
+    			width: 256px;
+    			background: url("images/alphabets.png") -1910px -910px;
+		}
+
+		#img36 
+		{
+    			height: 210px;
+    			width: 256px;
+    			background: url("images/alphabets.png") -25px -1180px;
+		}
+
+		#img37 
+		{
+    			height: 210px;
+    			width: 256px;
+    			background: url("images/alphabets.png") -330px -1160px;
+		}
+
+		a{ text-decoration:none;}
+
+	</style>
+</head>
+
+<body>
+	<div id="back" >
+		<div class="row" id="yellow_back">
+			<div class="col-1"><a href="#img19" style="color:red"> س </a></div>
+			<div class="col-1"><a href="#img18" style="color:#CC00FF"> ژ </a></div>
+			<div class="col-1"><a href="#img17" style="color:#00AF33"> ز </a></div>
+			<div class="col-1"><a href="#img16" style="color:#FF3E96"> ڑ </a></div>
+			<div class="col-1"><a href="#img15" style="color:#00B2EE"> ر </a></div>
+			<div class="col-1"><a href="#img14" style="color:#FF6103"> ذ </a></div>
+			<div class="col-1"><a href="#img13" style="color:purple"> ڈ </a></div>
+			<div class="col-1"><a href="#img12" style="color:#00FF00"> د </a></div>
+			<div class="col-1"><a href="#img11" style="color:blue"> خ </a></div>
+			<div class="col-1"><a href="#img10" style="color:red"> ح </a></div>
+			<div class="col-1"><a href="#img9" style="color:#CC00FF"> چ </a></div>
+			<div class="col-1"><a href="#img8" style="color:#00AF33"> ج </a></div>
+			<div class="col-1"><a href="#img7" style="color:#FF3E96"> ث </a></div>
+			<div class="col-1"><a href="#img6" style="color:#00B2EE"> ٹ </a></div>
+			<div class="col-1"><a href="#img5" style="color:#FF6103"> ت </a></div>
+			<div class="col-1"><a href="#img4" style="color:purple"> پ </a></div>
+			<div class="col-1"><a href="#img3" style="color:#00FF00"> ب </a></div>
+			<div class="col-1"><a href="#img2" style="color:blue"> ا </a></div>
+			<div class="col-1"><a href="#img1" style="color:red"> آ </a></div>
+		</div>
+
+		<div class="image">
+
+			<div id="img1"> <a href="#img2"> <button id="left" style="border-style:none;z-index:-10"></button></a>
+			<a href="#img1"> <button id="right" style="border-style:none;z-index:-10"></button></a> </div>
+				
+			<div id="img2"> <a href="#img3"> <button id="left" style="border-style:none;z-index:10"></button></a>
+			<a href="#img1"> <button id="right" style="border-style:none;z-index:10"></button></a> </div>
+
+			<div id="img3"> <a href="#img4"> <button id="left" style="border-style:none;z-index:10"></button></a>
+			<a href="#img2"> <button id="right" style="border-style:none;z-index:10"></button></a> </div>
+
+			<div id="img4"> <a href="#img5"> <button id="left" style="border-style:none;z-index:10"></button></a>
+			<a href="#img3"> <button id="right" style="border-style:none;z-index:10"></button></a> </div>
+
+			<div id="img5"> <a href="#img6"> <button id="left" style="border-style:none;z-index:10"></button></a>
+			<a href="#img4"> <button id="right" style="border-style:none;z-index:10"></button></a> </div>
+
+			<div id="img6"> <a href="#img7"> <button id="left" style="border-style:none;z-index:10"></button></a>
+			<a href="#img5"> <button id="right" style="border-style:none;z-index:10"></button></a> </div>
+
+			<div id="img7"> <a href="#img8"> <button id="left" style="border-style:none;z-index:10"></button></a>
+			<a href="#img6"> <button id="right" style="border-style:none;z-index:10"></button></a> </div>
+
+			<div id="img8"> <a href="#img9"> <button id="left" style="border-style:none;z-index:10"></button></a>
+			<a href="#img7"> <button id="right" style="border-style:none;z-index:10"></button></a> </div>
+
+			<div id="img9"> <a href="#img10"> <button id="left" style="border-style:none;z-index:10"></button></a>
+			<a href="#img8"> <button id="right" style="border-style:none;z-index:10"></button></a> </div>
+
+			<div id="img10"> <a href="#img11"> <button id="left" style="border-style:none;z-index:10"></button></a>
+			<a href="#img9"> <button id="right" style="border-style:none;z-index:10"></button></a> </div>
+
+			<div id="img11"> <a href="#img12"> <button id="left" style="border-style:none;z-index:10"></button></a>
+			<a href="#img10"> <button id="right" style="border-style:none;z-index:10"></button></a> </div>
+
+			<div id="img12"> <a href="#img13"> <button id="left" style="border-style:none;z-index:10"></button></a>
+			<a href="#img11"> <button id="right" style="border-style:none;z-index:10"></button></a> </div>
+
+			<div id="img13"> <a href="#img14"> <button id="left" style="border-style:none;z-index:10"></button></a>
+			<a href="#img12"> <button id="right" style="border-style:none;z-index:10"></button></a> </div>
+
+			<div id="img14"> <a href="#img15"> <button id="left" style="border-style:none;z-index:10"></button></a>
+			<a href="#img13"> <button id="right" style="border-style:none;z-index:10"></button></a> </div>
+
+			<div id="img15"> <a href="#img16"> <button id="left" style="border-style:none;z-index:10"></button></a>
+			<a href="#img14"> <button id="right" style="border-style:none;z-index:10"></button></a> </div>
+
+			<div id="img16"> <a href="#img17"> <button id="left" style="border-style:none;z-index:10"></button></a>
+			<a href="#img15"> <button id="right" style="border-style:none;z-index:10"></button></a> </div>
+
+			<div id="img17"> <a href="#img18"> <button id="left" style="border-style:none;z-index:10"></button></a>
+			<a href="#img16"> <button id="right" style="border-style:none;z-index:10"></button></a> </div>
+
+			<div id="img18"> <a href="#img19"> <button id="left" style="border-style:none;z-index:10"></button></a>
+			<a href="#img17"> <button id="right" style="border-style:none;z-index:10"></button></a> </div>
+
+			<div id="img19"> <a href="#img20"> <button id="left" style="border-style:none;z-index:10"></button></a>
+			<a href="#img18"> <button id="right" style="border-style:none;z-index:10"></button></a> </div>
+
+			<div id="img20"> <a href="#img21"> <button id="left" style="border-style:none;z-index:10"></button></a>
+			<a href="#img19"> <button id="right" style="border-style:none;z-index:10"></button></a> </div>
+
+			<div id="img21"> <a href="#img22"> <button id="left" style="border-style:none;z-index:10"></button></a>
+			<a href="#img20"> <button id="right" style="border-style:none;z-index:10"></button></a> </div>
+
+			<div id="img22"> <a href="#img23"> <button id="left" style="border-style:none;z-index:10"></button></a>
+			<a href="#img21"> <button id="right" style="border-style:none;z-index:10"></button></a> </div>
+
+			<div id="img23"> <a href="#img24"> <button id="left" style="border-style:none;z-index:10"></button></a>
+			<a href="#img22"> <button id="right" style="border-style:none;z-index:10"></button></a> </div>
+
+			<div id="img24"> <a href="#img25"> <button id="left" style="border-style:none;z-index:10"></button></a>
+			<a href="#img23"> <button id="right" style="border-style:none;z-index:10"></button></a> </div>
+
+			<div id="img25"> <a href="#img26"> <button id="left" style="border-style:none;z-index:10"></button></a>
+			<a href="#img24"> <button id="right" style="border-style:none;z-index:10"></button></a> </div>
+
+			<div id="img26"> <a href="#img27"> <button id="left" style="border-style:none;z-index:10"></button></a>
+			<a href="#img25"> <button id="right" style="border-style:none;z-index:10"></button></a> </div>
+
+			<div id="img27"> <a href="#img28"> <button id="left" style="border-style:none;z-index:10"></button></a>
+			<a href="#img26"> <button id="right" style="border-style:none;z-index:10"></button></a> </div>
+
+			<div id="img28"> <a href="#img29"> <button id="left" style="border-style:none;z-index:10"></button></a>
+			<a href="#img27"> <button id="right" style="border-style:none;z-index:10"></button></a> </div>
+
+			<div id="img29"> <a href="#img30"> <button id="left" style="border-style:none;z-index:10"></button></a>
+			<a href="#img28"> <button id="right" style="border-style:none;z-index:10"></button></a> </div>
+
+			<div id="img30"> <a href="#img31"> <button id="left" style="border-style:none;z-index:10"></button></a>
+			<a href="#img29"> <button id="right" style="border-style:none;z-index:10"></button></a> </div>
+
+			<div id="img31"> <a href="#img32"> <button id="left" style="border-style:none;z-index:10"></button></a>
+			<a href="#img30"> <button id="right" style="border-style:none;z-index:10"></button></a> </div>
+
+			<div id="img32"> <a href="#img33"> <button id="left" style="border-style:none;z-index:10"></button></a>
+			<a href="#img31"> <button id="right" style="border-style:none;z-index:10"></button></a> </div>
+
+			<div id="img33"> <a href="#img34"> <button id="left" style="border-style:none;z-index:10"></button></a>
+			<a href="#img32"> <button id="right" style="border-style:none;z-index:10"></button></a> </div>
+
+			<div id="img34"> <a href="#img35"> <button id="left" style="border-style:none;z-index:10"></button></a>
+			<a href="#img33"> <button id="right" style="border-style:none;z-index:10"></button></a> </div>
+
+			<div id="img35"> <a href="#img36"> <button id="left" style="border-style:none;z-index:10"></button></a>
+			<a href="#img34"> <button id="right" style="border-style:none;z-index:10"></button></a> </div>
+
+			<div id="img36"> <a href="#img37"> <button id="left" style="border-style:none;z-index:10"></button></a>
+			<a href="#img35"> <button id="right" style="border-style:none;z-index:10"></button></a> </div>
+
+			<div id="img37"> <a href="#img37"> <button id="left" style="border-style:none;z-index:10"></button></a>
+			<a href="#img36"> <button id="right" style="border-style:none;z-index:10"></button></a> </div>
+		</div>
+	
+		<div class="row" id="yellow_back">
+			<div class="col-1"><a href="#img37" style="color:blue"> ے </a></div>
+			<div class="col-1"><a href="#img37" style="color:red"> ی </a></div>
+			<div class="col-1"><a href="#img36" style="color:#CC00FF"> ۶ </a></div>
+			<div class="col-1"><a href="#img35" style="color:#00AF33"> ہ </a></div>
+			<div class="col-1"><a href="#img34" style="color:#FF3E96"> و </a></div>
+			<div class="col-1"><a href="#img33" style="color:#00B2EE"> ن </a></div>
+			<div class="col-1"><a href="#img32" style="color:red"> م </a></div>
+			<div class="col-1"><a href="#img31" style="color:#purple"> ل </a></div>
+			<div class="col-1"><a href="#img30" style="color:#00FF00"> گ </a></div>
+			<div class="col-1"><a href="#img29" style="color:red"> ك </a></div>
+			<div class="col-1"><a href="#img28" style="color:#00AF33"> ق </a></div>
+			<div class="col-1"><a href="#img27" style="color:#CC00FF"> ف </a></div>
+			<div class="col-1"><a href="#img26" style="color:#00AF33"> غ </a></div>
+			<div class="col-1"><a href="#img25" style="color:#FF3E96"> ع </a></div>
+			<div class="col-1"><a href="#img24" style="color:#00B2EE"> ظ </a></div>
+			<div class="col-1"><a href="#img23" style="color:#FF6103"> ط </a></div>
+			<div class="col-1"><a href="#img22" style="color:purple"> ض </a></div>
+			<div class="col-1"><a href="#img21" style="color:#00FF00"> ص </a></div>
+			<div class="col-1"><a href="#img20" style="color:blue"> ش </a></div>
+		</div>
+
+		<div class="row" >
+			<div class="col-4"></div>
+			<div class="col-6"><a href="home.html"><button>Back to Home</button></a></div>
+			<div class="col-6"><a href="quiz.html#question1"><button>Take a Quiz</button></a></div>
+		</div>
+	</div>
+</body>
+</html>

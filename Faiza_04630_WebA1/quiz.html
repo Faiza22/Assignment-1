@@ -1,0 +1,293 @@
+﻿<html>
+<head>
+	<title>Fun with Urdu</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<style>
+		* 
+		{
+   			 box-sizing: border-box;
+		}
+		.row:after 
+		{
+    			content: "";
+   			clear: both;
+    			display: block;
+		}
+
+		[class*="col-"] 
+		{
+    			float: left;
+    			padding: 15px;
+		}
+
+		.col-1 {width: 8.33%;}
+		.col-2 {width: 16.66%;}
+		.col-3 {width: 25%;}
+		.col-4 {width: 33.33%;}
+		.col-5 {width: 41.66%;}
+		.col-6 {width: 50%;}
+		.col-7 {width: 58.33%;}
+		.col-8 {width: 66.66%;}
+		.col-9 {width: 75%;}
+		.col-10 {width: 83.33%;}
+		.col-11 {width: 91.66%;}
+		.col-12 {width: 100%;}
+
+		body
+		{
+			background-image:url("images/back.jpg");
+			background-size:100% 100%;
+			background-attachment:fixed;
+			background-repeat:no-repeat;
+		}
+
+		button
+		{
+			font-size:25px;
+			font-family:Comic Sans MS;
+			text-align:center;
+			border:2px solid red;
+			border-radius:10px;
+			padding: 15px;
+			background-color:#eef946;
+			color:red;
+		}
+
+		button:hover
+		{
+			color:purple;
+			border:3px solid purple;
+		}
+
+		#back
+		{
+			background:rgba(255,255,255,0.7);
+			margin:2% 15% 0%;
+			width:70%;
+			height:500px;
+			font-size:200%;	
+				
+		}
+
+		#wrong
+		{
+    			width: 300px;
+    			height: 300px;
+			border:none;
+   			background-image:url("images/wrong.png");
+			background-repeat:no-repeat;
+    			
+    			-webkit-animation-name: example; /* Chrome, Safari, Opera */
+    			-webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    			animation-name: example;
+    			animation-duration: 4s;
+		}
+
+		/* Chrome, Safari, Opera */
+		@-webkit-keyframes example {
+    			from{background-position:300% 20%}
+			to{background-position:0% 20%}
+		}
+
+		/* Standard syntax */
+		@keyframes example {
+    			from{background-position:300% 20%}
+			to{background-position:0% 20%}
+		}
+
+		.image
+		{
+		background-color:none;
+		}
+
+		.image div
+		{
+			display:none;
+			
+			border-radius:25px;
+		}
+
+		.image div:target
+		{
+			display:block;
+		}		
+
+		#img1 
+		{
+    			height: 150px;
+    			width: 200px;
+    			background: url("images/alphabets.png") -330px -275px;
+			
+		}
+
+		#img2 
+		{
+    			height: 150px;
+    			width: 200px;
+    			background: url("images/alphabets.png") -970px -260px;
+			
+		}
+
+		#img3 
+		{
+    			height: 150px;
+    			width: 200px;
+    			background: url("images/alphabets.png") -5px -280px;
+		}
+		
+		#img4 
+		{
+    			height: 150px;
+    			width: 200px;
+    			background: url("images/alphabets.png") -1240px -950px;
+		}
+
+		#img5 
+		{
+    			height: 150px;
+    			width: 200px;
+    			background: url("images/alphabets.png") -1525px -500px;
+		}
+
+		#img6 
+		{
+    			height: 150px;
+    			width: 200px;
+    			background: url("images/alphabets.png") -320px -510px;
+		}
+
+		#img7 
+		{
+    			height: 150px;
+    			width: 200px;
+    			background: url("images/alphabets.png") -1290px -47px;
+		}
+
+		#img8 
+		{
+    			height: 150px;
+    			width: 200px;
+    			background: url("images/alphabets.png") -630px -730px;
+		}
+
+		#img9 
+		{
+    			height: 150px;
+    			width: 200px;
+    			background: url("images/alphabets.png") -960px -490px;
+		}
+
+		#img10 
+		{
+    			height: 150px;
+    			width: 200px;
+    			background: url("images/alphabets.png") -1290px -252px;
+		}
+
+		#img11 
+		{
+    			height: 150px;
+    			width: 200px;
+    			background: url("images/alphabets.png") -15px -490px;
+		}
+
+		#img12 
+		{
+    			height: 150px;
+    			width: 200px;
+    			background: url("images/alphabets.png") -1910px -955px;
+		}
+	
+		#img13 
+		{
+    			height: 150px;
+    			width: 200px;
+    			background: url("images/alphabets.png") -1840px -500px;
+		}
+
+		#img14 
+		{
+    			height: 150px;
+    			width: 200px;
+    			background: url("images/alphabets.png") -1225px -490px;
+		}
+
+		#img15 
+		{
+    			height: 150px;
+    			width: 200px;
+    			background: url("images/alphabets.png") -1880px -50px;
+		}
+
+	</style>
+	
+</head>
+
+<body>
+	<div id="back">
+		<div style="color:grey; font-family:Verdana; font-size:80%">Choose the correct picture:</div><br>
+
+		<div class="image">
+			<center><div id="question1" class="row">
+				<a href="#wrong1" class="col-4"><button id="img1"></button></a>
+				<a href="#question2" class="col-4"><button id="img2"></button></a>
+				<a href="#wrong1" class="col-4"><button id="img3"></button></a>
+				<center style="color:red;font-size:400%;">خ</center>
+			</div></center>
+
+			<center><div id="question2" class="row">
+				<a href="#question3" class="col-4"><button id="img4"></button></a>
+				<a href="#wrong2" class="col-4"><button id="img5"></button></a>
+				<a href="#wrong2" class="col-4"><button id="img6"></button></a>
+				<center style="color:red;font-size:400%;">ن</center>
+			</div></center>
+
+			<center><div id="question3" class="row">
+				<a href="#wrong3" class="col-4"><button id="img7"></button></a>
+				<a href="#question4" class="col-4"><button id="img8"></button></a>
+				<a href="#wrong3" class="col-4"><button id="img9"></button></a>
+				<center style="color:red;font-size:400%;">ظ</center>
+			</div></center>
+
+			<center><div id="question4" class="row">
+				<a href="#wrong4" class="col-4"><button id="img10"></button></a>
+				<a href="#wrong4" class="col-4"><button id="img11"></button></a>
+				<a href="#question5" class="col-4"><button id="img12"></button></a>
+				<center style="color:red;font-size:400%;">ہ</center>
+			</div></center>
+
+			<center><div id="question5" class="row">
+				<a href="#wrong5" class="col-4"><button id="img13"></button></a>
+				<a href="#end" class="col-4"><button id="img14"></button></a>
+				<a href="#wrong5" class="col-4"><button id="img15"></button></a>
+				<center style="color:red;font-size:400%;">س</center>
+			</div></center>
+
+
+			<center><div id="wrong1" ><a href="#question1"><button id="wrong" style="background-color:white;"></button></a></div></center>
+			<center><div id="wrong2" ><a href="#question2"><button id="wrong" style="background-color:white;"></button></a></div></center>
+			<center><div id="wrong3" ><a href="#question3"><button id="wrong" style="background-color:white;"></button></a></div></center>
+			<center><div id="wrong4" ><a href="#question4"><button id="wrong" style="background-color:white;"></button></a></div></center>
+			<center><div id="wrong5" ><a href="#question5"><button id="wrong" style="background-color:white;"></button></a></div></center>
+
+			<div id="wrong"> </div>
+			<div id="img1"> </div>
+			<div id="img2"> </div>
+			<center><div id="end" style="margin-top:5%; border: 3px solid green;">End of Quiz</div></center>
+
+			<div id="question2"> <a href="#wrong"><button id="img1"></button></a>
+				<a href="#question1"><button id="img2"></button></a></div>
+			
+		</div>
+	</div>
+
+	<div class="row" >
+		<div class="col-2"></div>
+		<div class="col-3"><a href="quiz.html#question1"><button>Restart Quiz</button></a></div>
+		<div class="col-3"><a href="home.html"><button>Back to Home</button></a></div>
+		<div class="col-3"><a href="learn.html#img1"><button>Learn Again</button></a></div>
+	</div>
+</body>
+</html>

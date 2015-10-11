@@ -1,0 +1,84 @@
+<html>
+<head>
+	<title>Fun with Urdu</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<style>
+		* 
+		{
+   			 box-sizing: border-box;
+		}
+		.row:after 
+		{
+    			content: "";
+   			clear: both;
+    			display: block;
+		}
+
+		[class*="col-"] 
+		{
+    			float: left;
+    			padding: 15px;
+		}
+
+		.col-1 {width: 8.33%;}
+		.col-2 {width: 16.66%;}
+		.col-3 {width: 25%;}
+		.col-4 {width: 33.33%;}
+		.col-5 {width: 41.66%;}
+		.col-6 {width: 50%;}
+		.col-7 {width: 58.33%;}
+		.col-8 {width: 66.66%;}
+		.col-9 {width: 75%;}
+		.col-10 {width: 83.33%;}
+		.col-11 {width: 91.66%;}
+		.col-12 {width: 100%;}
+
+		body
+		{
+			background-image:url("images/back.jpg");
+			background-size:100% 100%;
+			background-attachment:fixed;
+			background-repeat:no-repeat;
+		}
+
+		button
+		{
+			font-size:25px;
+			font-family:Comic Sans MS;
+			text-align:center;
+			border:2px solid red;
+			border-radius:10px;
+			padding: 15px;
+			background-color:#eef946;
+			color:red;
+		}
+
+		button:hover
+		{
+			color:purple;
+			border:3px solid purple;
+		}
+
+
+	</style>
+	
+</head>
+
+<body>
+
+	<div class="row">
+		<div class="col-12"><center><img src="images/banner.gif"></center></div>
+	</div>
+
+	<div class="row" style="margin-top:8%;">
+		<div class="col-3"></div>
+		<center>
+		<div class="col-3"><a href="learn.html#img1"><button>Start Learning</button></a></div>
+		<div class="col-3"><a href="quiz.html#question1"><button>Take a Quiz</button></a></div>
+		</center>
+	</div>
+</body>
+
+</html>
